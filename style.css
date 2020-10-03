@@ -1,0 +1,35 @@
+.container {
+  width: 600px;
+  height: 300px;
+  border: 2px black solid;
+  margin: auto;
+  overflow: hidden;
+}
+#slider-box {
+  display: flex;
+  position: relative;
+  left: 0;
+  right: 0;
+  transition: transform ease 1.3s;
+  transform: translateX(0);
+}
+.slider-item {
+  min-width: 600px;
+  height: 300px;
+}
+.slider-item:nth-child(3n+1) {
+  background-color: red;
+}
+.slider-item:nth-child(3n+2) {
+  background-color: blue;
+}
+.slider-item:nth-child(3n+3) {
+  background-color: green;
+}
+.button {
+  margin: auto;
+  margin-top: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 120px;
+}
